@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header><h1>Operations dashboard</h1></header>
+  <main>
+    <section class="kpis">
+      <article class="card"><h2>Requests</h2><p id="kpi-requests">—</p></article>
+      <article class="card"><h2>Errors</h2><p id="kpi-errors">—</p></article>
+      <article class="card"><h2>P95</h2><p id="kpi-latency">—</p></article>
+    </section>
+    <section class="card">
+      <h2>Traffic</h2>
+      <svg id="line-chart" viewBox="0 0 600 200" role="img" aria-label="Traffic over time"></svg>
+    </section>
+    <section class="card">
+      <h2>By endpoint</h2>
+      <svg id="bar-chart" viewBox="0 0 600 200" role="img" aria-label="Requests by endpoint"></svg>
+    </section>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
